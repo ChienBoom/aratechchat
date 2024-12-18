@@ -9,22 +9,17 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <script src="./main.js"></script>
-    <script src="./polyfills.js"></script>
-    <script src="./runtime.js"></script>
+    <script src="./bundle.js"></script>
     <link rel="stylesheet" href="./styles.css" />
 
     <streaming-chat
       class="fixed z-999"
       ishiddenbutton="false"
       showchatfirst="false"
-      isstream="true"
+      isstream="false"
       isenablehistory="false"
-      firstquestion="How can you help me?"
       chattitle="Animal AI"
       texttitlecolor="white"
-      botimageurl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqwujguzS5YfwXZy9ypHDj5UhlmAZt1g31Lg&s"
-      userimageurl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUWb_G92cN0NqZaiwxgfiw4rMpTKAFpJHhA&s"
       userchattextcolor="white"
       botgreeting="Wellcome Party Animal"
       placeholderinput="your question"
@@ -37,11 +32,11 @@
   </body>
 </html>
 
- <!-- ishiddenbutton: Ẩn button chat
+<!-- ishiddenbutton: Ẩn button chat
  showchatfirst: Mở chat khi khởi động ứng dụng
  isstream: Sử dụng chế độ stream trong request
  isenablehistory: Sử dụng lịch sử chat
- firstquestion: Câu hỏi đầu tiên khi khởi tạo chat mới
+ questionsuggests: cấu hình các option câu hỏi
  chattitle: Tiêu đề khung chat
  chatcolor: Màu cho khung chat
  texttitlecolor: Màu cho title khung chat
@@ -55,6 +50,9 @@
  placeholderinput: placeholder của phần searchInput
  heightframe: Chiều cao khung chat(Tính theo px hoặc %)
  widthframe: Chiều rộng khung chat(Tính theo px hoặc %)
+ position: xác định vị trí của button trên màn hình (tl: top-left | tr: top-right | bl: bottom-left | br: bottom-right)
+ xposition: xác định giá trị khoảng cách so với trục x
+ yposition: xác định giá trị khoảng cách so với trục y
  buttonimageurl: Đường dẫn icon của button
  borderradius: bo viền cho khung chat
  chatimageurl: Đường dẫn ảnh Chat
